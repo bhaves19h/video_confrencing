@@ -1,0 +1,85 @@
+.forgotContainer {
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(183, 156, 156) 0%, rgb(158, 212, 220) 40%, rgb(141, 117, 146) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.forgotContainer h2 {
+  color: #064a70;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.forgotContainer p {
+  color: #1f4f66;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.forgotContainer input {
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 1rem;
+  color: #333;
+}
+
+.forgotContainer input::placeholder {
+  color: #607d8b;
+}
+
+.forgotContainer input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(11, 132, 196, 0.6);
+}
+
+.forgotContainer button {
+  width: 280px;
+  padding: 12px;
+  background-color: rgb(11, 132, 196);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forgotContainer button:hover {
+  background-color: rgb(8, 110, 163);
+  transform: scale(1.05);
+}
+
+
+.resetMessage {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #064a70;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px 15px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
